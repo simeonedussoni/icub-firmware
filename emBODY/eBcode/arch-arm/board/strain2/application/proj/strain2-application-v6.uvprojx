@@ -338,7 +338,7 @@
               <MiscControls>-Wno-pragma-pack -Wno-deprecated-register</MiscControls>
               <Define>USE_STM32HAL STM32HAL_BOARD_STRAIN2 STM32HAL_DRIVER_V190 not_STRAIN2_APP_AT_64K</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\..\..\..\..\eBcode\arch-arm\libs\highlevel\abslayer\osal\api;..\..\..\..\..\..\eBcode\arch-arm\libs\midware\eventviewer\api;..\..\..\..\..\..\eBcode\arch-arm\embobj\core\exec\multitask-;..\..\..\..\..\..\..\..\icub-firmware-shared\eth\embobj\core\core-;..\..\..\..\..\..\eBcode\arch-arm\libs\lowlevel\stm32hal\api;..\..\..\..\..\..\eBcode\arch-arm\embot\common;..\..\..\..\..\..\eBcode\arch-arm\embot\app;..\..\..\..\..\..\eBcode\arch-arm\embot\i2h;..\..\..\..\..\..\eBcode\arch-arm\embot\hw;..\..\..\..\..\..\eBcode\arch-arm\embot\sys;..\..\..\..\..\..\eBcode\arch-arm\embot;..\..\..\..\embot\binary;..\..\..\..\embot\dsp;..\..\..\..\..\..\..\..\icub-firmware-shared\can\canProtocolLib;..\..\..\..\embot\code</IncludePath>
+              <IncludePath>..\..\..\..\..\..\eBcode\arch-arm\libs\highlevel\abslayer\osal\api;..\..\..\..\..\..\eBcode\arch-arm\libs\midware\eventviewer\api;..\..\..\..\..\..\eBcode\arch-arm\embobj\core\exec\multitask-;..\..\..\..\..\..\..\..\icub-firmware-shared\eth\embobj\core\core-;..\..\..\..\..\..\eBcode\arch-arm\libs\lowlevel\stm32hal\api;..\..\..\..\..\..\eBcode\arch-arm\embot\common;..\..\..\..\..\..\eBcode\arch-arm\embot\app;..\..\..\..\..\..\eBcode\arch-arm\embot\i2h;..\..\..\..\..\..\eBcode\arch-arm\embot\hw;..\..\..\..\..\..\eBcode\arch-arm\embot\sys;..\..\..\..\..\..\eBcode\arch-arm\embot;..\..\..\..\embot\binary;..\..\..\..\embot\dsp;..\..\..\..\..\..\..\..\icub-firmware-shared\can\canProtocolLib;..\..\..\..\embot\code;D:\icub-tech-iit\study-mbd-ft-sensors\symulink-model\simple_fakeADC_ert_rtw</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -762,6 +762,31 @@
                   </Cads>
                 </FileArmAds>
               </FileOption>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>fake-adc-simulink</GroupName>
+          <Files>
+            <File>
+              <FileName>rtwtypes.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>D:\icub-tech-iit\study-mbd-ft-sensors\symulink-model\simple_fakeADC_ert_rtw\rtwtypes.h</FilePath>
+            </File>
+            <File>
+              <FileName>simple_fakeADC.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>D:\icub-tech-iit\study-mbd-ft-sensors\symulink-model\simple_fakeADC_ert_rtw\simple_fakeADC.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>simple_fakeADC.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>D:\icub-tech-iit\study-mbd-ft-sensors\symulink-model\simple_fakeADC_ert_rtw\simple_fakeADC.h</FilePath>
+            </File>
+            <File>
+              <FileName>matrix_conversion_FW.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>D:\study-mbd-ft-sensors\symulink-model\matrix_conversion_FW_ert_rtw\matrix_conversion_FW.cpp</FilePath>
             </File>
           </Files>
         </Group>
@@ -1595,6 +1620,31 @@
                   </Cads>
                 </FileArmAds>
               </FileOption>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>fake-adc-simulink</GroupName>
+          <Files>
+            <File>
+              <FileName>rtwtypes.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>D:\icub-tech-iit\study-mbd-ft-sensors\symulink-model\simple_fakeADC_ert_rtw\rtwtypes.h</FilePath>
+            </File>
+            <File>
+              <FileName>simple_fakeADC.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>D:\icub-tech-iit\study-mbd-ft-sensors\symulink-model\simple_fakeADC_ert_rtw\simple_fakeADC.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>simple_fakeADC.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>D:\icub-tech-iit\study-mbd-ft-sensors\symulink-model\simple_fakeADC_ert_rtw\simple_fakeADC.h</FilePath>
+            </File>
+            <File>
+              <FileName>matrix_conversion_FW.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>D:\study-mbd-ft-sensors\symulink-model\matrix_conversion_FW_ert_rtw\matrix_conversion_FW.cpp</FilePath>
             </File>
           </Files>
         </Group>

@@ -75,6 +75,7 @@ constexpr embot::code::application::evntskcan::CFG cfg{ &mysys, &myevt };
 // --------------------------------------------------------------------------------------------------------------------
 
 int main(void)
+
 { 
     embot::code::application::evntskcan::run(cfg);
     for(;;);    

@@ -29,6 +29,8 @@
 #include "embot_hw_pga308.h"
 #include <vector>
 #include <memory>
+//#include <simple_fakeADC.h>
+#include <D:\study-mbd-ft-sensors\symulink-model\matrix_conversion_FW_ert_rtw\matrix_conversion_FW.h> 
 
 namespace embot { namespace app { namespace application {
            
