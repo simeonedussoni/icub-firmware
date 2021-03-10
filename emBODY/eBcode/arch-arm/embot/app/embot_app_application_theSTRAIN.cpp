@@ -1347,6 +1347,7 @@ bool embot::app::application::theSTRAIN::Impl::processing()
 				fakedata.initialize();
 				fakedata.step();
 				runtimedata.data.force.set(embot::dsp::q15::Q15toU16(fakedata.rtY.FTQ15[0]),embot::dsp::q15::Q15toU16(fakedata.rtY.FTQ15[1]),embot::dsp::q15::Q15toU16(fakedata.rtY.FTQ15[2]));
+//				runtimedata.data.force.set(128,embot::dsp::q15::Q15toU16(fakedata.rtY.FTQ15[1]),embot::dsp::q15::Q15toU16(fakedata.rtY.FTQ15[2]));
    			runtimedata.data.torque.set(embot::dsp::q15::Q15toU16(fakedata.rtY.FTQ15[3]),embot::dsp::q15::Q15toU16(fakedata.rtY.FTQ15[4]),embot::dsp::q15::Q15toU16(fakedata.rtY.FTQ15[5]));
 			
 		// here the fake force value with three differetn conversion types is inserted in place of the real force values

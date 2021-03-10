@@ -30,7 +30,8 @@
 #include <vector>
 #include <memory>
 //#include <simple_fakeADC.h>
-#include <D:\study-mbd-ft-sensors\symulink-model\matrix_conversion_FW_ert_rtw\matrix_conversion_FW.h> 
+//#include <D:\study-mbd-ft-sensors\symulink-model\matrix_conversion_FW_ert_rtw\matrix_conversion_FW.h> 
+#include "../../board/strain2/MBDcode/matrix_conversion_FW.h" 
 
 namespace embot { namespace app { namespace application {
            
@@ -107,7 +108,27 @@ namespace embot { namespace app { namespace application {
         std::unique_ptr<Impl> pImpl;         
     };       
 
+const matrix_conversion_FWModelClass::ConstP rtConstP = {
+  // Computed Parameter: Constant1_Value
+  //  Referenced by: '<Root>/Constant1'
 
+  { 32891.0F, 32423.0F, 33860.0F, 32657.0F, 32692.0F, 33143.0F },
+
+  // Computed Parameter: FTmatrix_Value
+  //  Referenced by: '<Root>/FT-matrix'
+
+  { 0.00988929532F, 0.0191367958F, 0.29356432F, 0.0135884257F, -0.167438075F,
+    -0.000763848308F, 0.002741053F, 0.24446407F, 0.00205103774F, 0.0359362811F,
+    -0.00869085919F, 0.0304790251F, 0.209965482F, -0.122040592F, 0.00836832F,
+    -0.0175958369F, -0.0248202477F, 0.0466253348F, 0.068172276F, -0.0284988303F,
+    0.224846452F, -0.139469758F, 0.104583777F, 0.00978253223F, 0.00265106256F,
+    0.00638146512F, 0.231949747F, 0.130071655F, 0.101716511F, 0.00350109977F,
+    -0.208019406F, -0.119167745F, 0.00162205042F, -0.0200420599F, 0.0370682627F,
+    0.0503032804F }
+};
+
+		
+		
 }}} // namespace embot { namespace app { namespace application
 
 
