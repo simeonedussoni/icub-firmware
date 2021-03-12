@@ -30,6 +30,9 @@
 #include <vector>
 #include <memory>
 
+#include "../../board/strain2/MBDcode/matrix_conversion_FW.h" 
+
+
 namespace embot { namespace app { namespace application {
            
     class theSTRAIN : public CANagentSTRAIN

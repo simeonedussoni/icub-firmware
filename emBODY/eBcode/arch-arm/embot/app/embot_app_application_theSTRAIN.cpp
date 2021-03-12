@@ -775,7 +775,8 @@ struct embot::app::application::theSTRAIN::Impl
     
     StrainRuntimeData runtimedata;
     StrainConfigData configdata;
-    
+
+		matrix_conversion_FWModelClass fakedata; // Instance of model class		
 
     Impl() 
     {
@@ -1395,8 +1396,38 @@ bool embot::app::application::theSTRAIN::Impl::processing()
    
     if(false == runtimedata.data.adcsaturation)
     {
-        runtimedata.data.force.set(embot::dsp::q15::Q15toU16(runtimedata.data.forcetorque[0]), embot::dsp::q15::Q15toU16(runtimedata.data.forcetorque[1]), embot::dsp::q15::Q15toU16(runtimedata.data.forcetorque[2]));
-        runtimedata.data.torque.set(embot::dsp::q15::Q15toU16(runtimedata.data.forcetorque[3]), embot::dsp::q15::Q15toU16(runtimedata.data.forcetorque[4]), embot::dsp::q15::Q15toU16(runtimedata.data.forcetorque[5]));
+//        runtimedata.data.force.set(embot::dsp::q15::Q15toU16(runtimedata.data.forcetorque[0]), embot::dsp::q15::Q15toU16(runtimedata.data.forcetorque[1]), embot::dsp::q15::Q15toU16(runtimedata.data.forcetorque[2]));
+//        runtimedata.data.torque.set(embot::dsp::q15::Q15toU16(runtimedata.data.forcetorque[3]), embot::dsp::q15::Q15toU16(runtimedata.data.forcetorque[4]), embot::dsp::q15::Q15toU16(runtimedata.data.forcetorque[5]));
+
+//			
+    fakedata.rtU.Digitaldata[0] = runtimedata.data.adcvalue[0];
+    fakedata.rtU.Digitaldata[1] = runtimedata.data.adcvalue[1];
+    fakedata.rtU.Digitaldata[2] = runtimedata.data.adcvalue[2];
+    fakedata.rtU.Digitaldata[3] = runtimedata.data.adcvalue[3];
+    fakedata.rtU.Digitaldata[4] = runtimedata.data.adcvalue[4];
+    fakedata.rtU.Digitaldata[5] = runtimedata.data.adcvalue[5];
+//    fakedata.rtU.Digitaldata[0] = 687+32768;
+//    fakedata.rtU.Digitaldata[1] = 11607+32768;
+//    fakedata.rtU.Digitaldata[2] = 7685+32768;
+//    fakedata.rtU.Digitaldata[3] = 778+32768;
+//    fakedata.rtU.Digitaldata[4] = -1874+32768;
+//    fakedata.rtU.Digitaldata[5] = 9195+32768;
+
+//        runtimedata.data.force.set(embot::dsp::q15::Q15toU16(runtimedata.data.forcetorque[0]), embot::dsp::q15::Q15toU16(runtimedata.data.forcetorque[1]), embot::dsp::q15::Q15toU16(runtimedata.data.forcetorque[2]));
+//		    runtimedata.data.torque.set(embot::dsp::q15::Q15toU16(runtimedata.data.forcetorque[3]), embot::dsp::q15::Q15toU16(runtimedata.data.forcetorque[4]), embot::dsp::q15::Q15toU16(runtimedata.data.forcetorque[5]));
+//				std::memmove(fakedata.rtU.Digitaldata, runtimedata.data.q15value, 12);	
+		   	for(int i=0; i<6; i++)
+				{
+//					fakedata.rtU.Digitaldata[i] = runtimedata.data.q15value[i]; // adc value is 13 bits. we need to scale it to 64k
+//					fakedata.rtU.Digitaldata[i] <<= 3; // adc value is 13 bits. we need to scale it to 64k
+				}
+				fakedata.initialize();
+				fakedata.step();
+				runtimedata.data.force.set(embot::dsp::q15::Q15toU16(fakedata.rtY.FTQ15[0]),embot::dsp::q15::Q15toU16(fakedata.rtY.FTQ15[1]),embot::dsp::q15::Q15toU16(fakedata.rtY.FTQ15[2]));
+//				runtimedata.data.force.set(128,embot::dsp::q15::Q15toU16(fakedata.rtY.FTQ15[1]),embot::dsp::q15::Q15toU16(fakedata.rtY.FTQ15[2]));
+   			runtimedata.data.torque.set(embot::dsp::q15::Q15toU16(fakedata.rtY.FTQ15[3]),embot::dsp::q15::Q15toU16(fakedata.rtY.FTQ15[4]),embot::dsp::q15::Q15toU16(fakedata.rtY.FTQ15[5]));
+
+
     }
     else
     {

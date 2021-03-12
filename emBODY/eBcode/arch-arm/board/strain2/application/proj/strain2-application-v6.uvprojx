@@ -792,6 +792,26 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>mbdcode</GroupName>
+          <Files>
+            <File>
+              <FileName>matrix_conversion_FW.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\MBDcode\matrix_conversion_FW.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>matrix_conversion_FW.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\MBDcode\matrix_conversion_FW.h</FilePath>
+            </File>
+            <File>
+              <FileName>rtwtypes.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\MBDcode\rtwtypes.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>::CMSIS</GroupName>
           <GroupOption>
             <CommonProperty>
@@ -1651,6 +1671,26 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>mbdcode</GroupName>
+          <Files>
+            <File>
+              <FileName>matrix_conversion_FW.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\MBDcode\matrix_conversion_FW.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>matrix_conversion_FW.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\MBDcode\matrix_conversion_FW.h</FilePath>
+            </File>
+            <File>
+              <FileName>rtwtypes.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\MBDcode\rtwtypes.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>::CMSIS</GroupName>
           <GroupOption>
             <CommonProperty>
@@ -1856,7 +1896,7 @@
           </Flash1>
           <bUseTDR>1</bUseTDR>
           <Flash2>BIN\UL2CM3.DLL</Flash2>
-          <Flash3></Flash3>
+          <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
           <pFcarmGrp></pFcarmGrp>
@@ -2544,6 +2584,26 @@
               <FileName>embot_hw_bsp_strain2.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>..\..\bsp\embot_hw_bsp_strain2.cpp</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>mbdcode</GroupName>
+          <Files>
+            <File>
+              <FileName>matrix_conversion_FW.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\MBDcode\matrix_conversion_FW.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>matrix_conversion_FW.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\MBDcode\matrix_conversion_FW.h</FilePath>
+            </File>
+            <File>
+              <FileName>rtwtypes.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\MBDcode\rtwtypes.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -3492,6 +3552,26 @@
               <FileName>embot_hw_bsp_strain2.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>..\..\bsp\embot_hw_bsp_strain2.cpp</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>mbdcode</GroupName>
+          <Files>
+            <File>
+              <FileName>matrix_conversion_FW.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\MBDcode\matrix_conversion_FW.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>matrix_conversion_FW.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\MBDcode\matrix_conversion_FW.h</FilePath>
+            </File>
+            <File>
+              <FileName>rtwtypes.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\MBDcode\rtwtypes.h</FilePath>
             </File>
           </Files>
         </Group>
